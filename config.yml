@@ -1,0 +1,9 @@
+app:
+  name: gcat
+  port: 8989
+
+db:
+  name:     test
+  user:     test
+  password: test
+  port:     1234

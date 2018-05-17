@@ -1,6 +1,7 @@
 package main
 
 import (
+	"mugg/gcat/app/conf"
 	"mugg/gcat/routes"
 
 	"github.com/gin-gonic/gin"
@@ -9,7 +10,8 @@ import (
 func main() {
 	r := gin.Default()
 
+	config := conf.Config
 	routes.API(r)
 
-	r.Run(":8989")
+	r.Run(":" + config.APP.Port)
 }
